@@ -24,7 +24,8 @@ public class Calculator{
         Dif a3=(a,b)->(a*b);  
         System.out.println(a3.product(20,10));
 
-        Div a4=(a,b)->try{
+        Div a4=(a,b)->{
+        	try{
                 if(b == 0){
                     throw new ArithmeticException();
 
@@ -35,7 +36,7 @@ public class Calculator{
                 e.printStackTrace();
             }
             return 0;
-    };  
+        };  
         System.out.println(a4.safeDivision(20,10));
     }  
 }
